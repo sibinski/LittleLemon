@@ -1,0 +1,240 @@
+.App {
+    text-align: center;
+}
+
+.navigation {
+    display: grid;
+    place-items: center;
+    height: 60px;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+.nav-menu {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+img.header-logo, img.footer-logo {
+    display: block;
+    height: 8rem;
+    pointer-events: none;
+    margin: 50px auto;
+    animation: logo-spin infinite 20s linear;
+}
+
+.ReserveTable {
+    display: flex;
+    margin-left: 0px;
+    width: 150px;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    .ReserveTable:hover {
+        background-color: darkorange;
+    }
+
+@media (max-width: 768px) {
+    .ReserveTable {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 90%;
+    }
+}
+
+
+.header-container {
+    display: flex;
+    background-color: #282c34;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0 5%
+}
+
+.header-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px
+}
+
+.header-image {
+    flex: 0 0 200px;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    align-self:auto
+}
+
+.HomePage-container {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0 5%
+}
+
+h1 {
+    color: yellow;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+h1.HomePage {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: medium;
+    color: greenyellow;
+    text-align: left;
+    line-height: 1.0;
+}
+
+h3.HomePage {
+   font-size: medium;
+   color:black;
+   text-align: left;
+   line-height: 1.0;
+}
+
+h6 {
+    font-size: small;
+    text-align: left;
+    line-height: 1.0;
+    color: yellowgreen;
+}
+
+.dish-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px
+}
+
+.dish-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.order-delivery {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: justify-all
+}
+
+.header-image {
+    flex: 0 0 150px;
+    width: 200px; 
+    height: 200px;
+    object-fit: cover
+}
+
+.greek-salad-image {
+    margin-bottom: 10px;
+    object-fit:cover;
+    width: 200px;
+    height: 200px
+}
+
+.bruschetta-image {
+    margin-bottom: 10px;
+    object-fit: cover;
+    width: 200px;
+    height: 200px
+}
+
+.lemon-dessert-image {
+    margin-bottom: 10px;
+    object-fit: cover;
+    width: 200px;
+    height: 200px
+}
+
+.main {
+    max-height: 75vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+.MenuOnline {
+    display: flex;
+    width: 150px;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    .MenuOnline:hover {
+        background-color: darkorange;
+    }
+
+@media (max-width: 768px) {
+    .MenuOnline {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 90%;
+    }
+}
+
+.specials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+
+.footer {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 60px;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

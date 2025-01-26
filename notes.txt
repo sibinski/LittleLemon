@@ -1,0 +1,6 @@
+superuser: admin
+password: qwerty1986
+
+passwords for users: arkesyan (delivery_crew), georg-ots (user): !"Passw0rD£$1986
+passwords for users: johndoe (manager), jimdoe (manager): !"password£$
+
