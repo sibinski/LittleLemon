@@ -21,6 +21,8 @@ from rest_framework_simplejwt.views import TokenBlacklistView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('restaurant.urls')),
+    path('restaurant/', include('restaurant.urls')),
     path('api/', include('LittlelemonAPI.urls')),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.authtoken')),
