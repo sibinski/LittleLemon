@@ -18,15 +18,27 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework_simplejwt.views import TokenBlacklistView
+from rest_framework.authtoken.views import obtain_auth_token
+from rest_framework.routers import DefaultRouter
+from LittlelemonAPI import views
+from restaurant import views
+# from restaurant.views import UserViewSet
+
+#router = DefaultRouter()
+#router.register(r'users', UserViewSet)
+
 
 urlpatterns = [
+    #   path('', include(router.urls)),
+    path('restaurant/menu/', include('restaurant.urls')),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('admin/', admin.site.urls),
     path('', include('restaurant.urls')),
-    path('restaurant/', include('restaurant.urls')),
     path('api/', include('LittlelemonAPI.urls')),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.authtoken')),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/token/blacklist/', TokenBlacklistView.as_view(), name = 'token_blacklist'),
+    path('api-token-auth/', obtain_auth_token, name="obtain-auth-token"),
 ]
