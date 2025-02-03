@@ -3,14 +3,14 @@
 /api/menu-items/
 
 # Getting Started with Create React App
-pip install django
-pip install djangorestframework
-pip install djoser
-python manage.py runserver
+pip install django <br>
+pip install djangorestframework <br>
+pip install djoser <br>
+python manage.py runserver <br>
 
 # Users:
-superuser: admin
-password: qwerty1986
+superuser: admin <br>
+password: qwerty1986 
 
-passwords for users: arkesyan (delivery_crew), georg-ots (user): !"Passw0rD£$1986
-passwords for users: johndoe (manager), jimdoe (manager): !"password£$
+passwords for users: arkesyan (delivery_crew), georg-ots (user): !"Passw0rD£$1986 <br>
+passwords for users: johndoe (manager), jimdoe (manager): !"password£$ <br>
